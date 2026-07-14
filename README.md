@@ -1,4 +1,6 @@
 # Hybrid Test Automation Framework — Playwright + Cucumber BDD
+![CI](https://github.com/lydiamcshane/saucedemo-hybridruns/actions/workflows/playwright.yml/badge.svg)
+
 
 A single TypeScript project that runs **Playwright-native specs**, **Cucumber BDD scenarios**, and **API tests** against a shared Page Object Model. One set of Page Objects, one set of fixtures — multiple execution surfaces. Change a locator once and everything stays in sync.
 
