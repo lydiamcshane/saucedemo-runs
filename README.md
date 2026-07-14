@@ -9,14 +9,14 @@ Target application: [SauceDemo](https://www.saucedemo.com/)
 ## Why Hybrid?
 
 Most repos pick one style. This one demonstrates that Playwright specs (fast, developer-facing) and Gherkin/BDD scenarios (readable, stakeholder-facing) can coexist without duplicating logic:
-
+```
                   ┌───────────────────────────┐
    Playwright ───▶│   Page Object Model       │◀─── Cucumber BDD
    UI specs       │  Login / Inventory /      │      step definitions
                   │  Cart / Checkout          │
    API specs  ───▶│  + Users fixture          │
                   └───────────────────────────┘
-
+```
 - **Playwright UI** injects `page` via its fixture → `tests/*.spec.ts`
 - **Cucumber** launches the browser in `CustomWorld` and injects the same `page` → `features/steps/*.ts`
 - **API tests** validate endpoints independently → `api/*.spec.ts`
@@ -51,6 +51,7 @@ Built and validated against a deliberately constrained legacy environment to pro
 ---
 
 ## Project Structure
+```
 .
 ├── .github/
 │   └── workflows/
@@ -87,11 +88,10 @@ Built and validated against a deliberately constrained legacy environment to pro
 │   ├── constants.ts             # Shared constants
 │   └── helpers.ts               # Reusable helper functions
 ├── cucumber.js                  # Node 18 / CommonJS config (ts-node/register)
-├── cucumber.tscongif.json
 ├── playwright.config.ts
 ├── package.json
 └── package-lock.json
-
+```
 ---
 
 ## Coverage
