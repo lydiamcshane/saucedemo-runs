@@ -1,0 +1,145 @@
+[
+  {
+    "description": "  As a user of SauceDemo\n  I want to log in\n  So that I can access the inventory",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;standard-user-can-log-in-successfully",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Standard user can log in successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3737340160
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the login page",
+            "match": {
+              "location": "features/step_definitions/login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 714972815
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I log in as the \"standard\" user",
+            "match": {
+              "location": "features/step_definitions/login.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 730079328
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the inventory page should load",
+            "match": {
+              "location": "features/step_definitions/login.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87348494
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 711308536
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;locked-out-user-cannot-log-in",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Locked-out user cannot log in",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3468443830
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am on the login page",
+            "match": {
+              "location": "features/step_definitions/login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 977384046
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I log in as the \"locked\" user",
+            "match": {
+              "location": "features/step_definitions/login.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 677081942
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see an error message",
+            "match": {
+              "location": "features/step_definitions/login.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13942362
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 747067553
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "features/login.feature"
+  }
+]
