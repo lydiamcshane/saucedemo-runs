@@ -117,7 +117,7 @@ Auto-captured screenshots, traces, and video on failure.
 ---
 
 ## Running Tests
-
+```
 bash
 # All Playwright specs (UI + API)
 npm test
@@ -133,7 +133,7 @@ npx playwright test api/
 
 # View Playwright HTML report
 npx playwright show-report
-
+```
 ---
 
 ## CI/CD
